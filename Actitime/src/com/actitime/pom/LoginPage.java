@@ -23,8 +23,8 @@ public class LoginPage extends BaseClass {
 		PageFactory.initElements(driver,this);
 	}
 	
-	public void setLogin(String un,String pw) {
-		untbx.sendKeys(un);
+	public void setLogin(String u,String pw) {
+		untbx.sendKeys(u);
 		pwtbx.sendKeys(pw);
 		lgbtn.click();
 	}
