@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -25,5 +26,6 @@ public class CreateCustomer extends BaseClass {
 		t.setCustomer(custName, custDes);
 		String expName = t.getCusName();
 		Assert.assertEquals(expName, custName);
+		Reporter.log("Noorulla",true);
 	}
 }
