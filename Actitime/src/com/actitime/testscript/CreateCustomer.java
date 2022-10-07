@@ -15,7 +15,7 @@ import com.actitime.pom.TaskPage;
 @Listeners(com.actitime.generic.ListenerImplements.class)
 public class CreateCustomer extends BaseClass {
 	@Test
-	public void CreateCustomer() throws InterruptedException, EncryptedDocumentException, IOException {
+	public void CreateCustomer() throws EncryptedDocumentException, IOException, InterruptedException {
 		HomePage h=new HomePage(driver);
 		h.setTasks();
 		TaskPage t=new TaskPage(driver);
